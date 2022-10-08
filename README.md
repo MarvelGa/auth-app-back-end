@@ -3,3 +3,4 @@
    "login": "petrova@gmail.com",
    "password": "Irina111"
    }
+3. http://localhost:8080/api/users
