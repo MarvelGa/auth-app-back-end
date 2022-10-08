@@ -13,6 +13,7 @@ public class UserController {
 
     @PostMapping
     public UserDto getUserByItsCredentials(@RequestBody UserDto request){
+         userService.saveUsersToDb();
          return userService.findByLoginAndPassword(request);
     }
 }
