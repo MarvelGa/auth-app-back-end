@@ -11,13 +11,8 @@ import org.springframework.web.bind.annotation.*;
 public class UserController {
     private final UserService userService;
 
-    @GetMapping
+    @PostMapping
     public UserDto getUserByItsCredentials(@RequestBody UserDto request){
          return userService.findByLoginAndPassword(request);
-    }
-
-    @GetMapping("/{id}")
-    public UserDto getUserById(@PathVariable Long id){
-        return new UserDto();
     }
 }
