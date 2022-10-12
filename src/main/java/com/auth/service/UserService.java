@@ -21,7 +21,7 @@ public class UserService {
         return user == null ? new UserDto() : new UserDto(email, password);
     }
 
-    public void saveUsersToDb(){
+    public void saveUsersToDb() {
         User user1 = User.builder()
                 .login("petrova@gmail.com")
                 .password("Irina111")
@@ -29,7 +29,7 @@ public class UserService {
 
         User user2 = User.builder()
                 .login("ivanov@gmail.com")
-                .password("Ivan111")
+                .password("Ivan1111")
                 .build();
         repository.saveAll(List.of(user1, user2));
     }
